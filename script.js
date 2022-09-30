@@ -13,7 +13,11 @@ countBtn.addEventListener("click",function(){
     //Taking length, As array length will be our total words
     let splitTextlength = splitText.length;
     //showing output
-    showCountWord.innerText = splitTextlength;
+    if(splitText[0] === ''){
+        alert("Please Type Something..")
+    }else {
+        showCountWord.innerText = splitTextlength;
+    }
 
     //Finding Total character, here we are trimmed text length as well
     let totalChar = trimmdedTextValue.length;
