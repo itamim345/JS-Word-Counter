@@ -18,8 +18,13 @@ countBtn.addEventListener("click",function(){
     //Finding Total character, here we are trimmed text length as well
     let totalChar = trimmdedTextValue.length;
     //Showing Output
-    showCountChar.innerText = totalChar;
+    showCountChar.innerText = totalChar;    
+})
 
-    
+//Funtion to Clear the Output
+clearBtn.addEventListener('click',function(){
+    textField.value = " ";
+    showCountWord.innerText = "00";
+    showCountChar.innerText = "00";
 })
 
